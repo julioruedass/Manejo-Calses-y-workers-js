@@ -1,12 +1,4 @@
 let counter =0;
-/*
-    function countNumbers() {     
-        cont++;
-        postMessage(cont); // Enviar mensaje al hilo principal
-        setTimeout(countNumbers, 1000); // Llamar a la función cada segundo
-    }
-    countNumbers();
-*/
 // Escucha el primer mensaje desde el hilo principal
 onmessage = (event) => {
     // Inicializa el contador con el valor recibido  
@@ -19,3 +11,10 @@ onmessage = (event) => {
     }
     incrementCounter(); // Llama a la función inicial
 };
+
+//basic flujo sin parametros
+    function countNumbers() {     
+        cont++;
+        postMessage(cont); // Enviar mensaje al hilo principal
+        setTimeout(countNumbers, 1000); // Llamar a la función cada segundo
+    }
